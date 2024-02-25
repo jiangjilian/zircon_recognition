@@ -1,0 +1,270 @@
+The fold of cross validation: LeaveOneOut.
+*************************database 2*************************
+Training set: 
+Label
+0.0    176
+1.0    123
+Name: Label, dtype: int64
+Testing set: 
+Label
+0.0    44
+1.0    31
+Name: Label, dtype: int64
+--------------------------------
+----------------decisiontree-----------------
+Best param: {'min_samples_split': 2, 'min_samples_leaf': 3, 'max_depth': 5, 'criterion': 'entropy'}
+              precision    recall  f1-score   support
+
+         0.0       0.91      0.93      0.92        44
+         1.0       0.90      0.87      0.89        31
+
+    accuracy                           0.91        75
+   macro avg       0.91      0.90      0.90        75
+weighted avg       0.91      0.91      0.91        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.91      0.93      0.92        44
+         1.0       0.80      0.75      0.77        16
+
+    accuracy                           0.88        60
+   macro avg       0.86      0.84      0.85        60
+weighted avg       0.88      0.88      0.88        60
+
+Accuracy of Low-P S-type zircon:0.75
+The proportion of S-type zircons in JH zircons: 0.3424317617866005
+The proportion of S-type zircons in Hadean JH zircons: 0.2978723404255319
+----------------my_GaussianNB-----------------
+              precision    recall  f1-score   support
+
+         0.0       0.81      1.00      0.90        44
+         1.0       1.00      0.68      0.81        31
+
+    accuracy                           0.87        75
+   macro avg       0.91      0.84      0.85        75
+weighted avg       0.89      0.87      0.86        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.81      1.00      0.90        44
+         1.0       1.00      0.38      0.55        16
+
+    accuracy                           0.83        60
+   macro avg       0.91      0.69      0.72        60
+weighted avg       0.86      0.83      0.80        60
+
+Accuracy of Low-P S-type zircon:0.375
+The proportion of S-type zircons in JH zircons: 0.07444168734491315
+The proportion of S-type zircons in Hadean JH zircons: 0.07446808510638298
+----------------Bernoulli-----------------
+Best param: {'fit_prior': True, 'alpha': 0.01}
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.98      0.90        44
+         1.0       0.96      0.71      0.81        31
+
+    accuracy                           0.87        75
+   macro avg       0.89      0.84      0.86        75
+weighted avg       0.88      0.87      0.86        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.83      0.98      0.90        44
+         1.0       0.88      0.44      0.58        16
+
+    accuracy                           0.83        60
+   macro avg       0.85      0.71      0.74        60
+weighted avg       0.84      0.83      0.81        60
+
+Accuracy of Low-P S-type zircon:0.4375
+The proportion of S-type zircons in JH zircons: 0.12903225806451613
+The proportion of S-type zircons in Hadean JH zircons: 0.13829787234042554
+----------------logistic-----------------
+Best param: {'solver': 'sag', 'penalty': 'l2', 'multi_class': 'multinomial', 'C': 10}
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.98      0.97        44
+         1.0       0.97      0.94      0.95        31
+
+    accuracy                           0.96        75
+   macro avg       0.96      0.96      0.96        75
+weighted avg       0.96      0.96      0.96        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.98      0.97        44
+         1.0       0.93      0.88      0.90        16
+
+    accuracy                           0.95        60
+   macro avg       0.94      0.93      0.93        60
+weighted avg       0.95      0.95      0.95        60
+
+Accuracy of Low-P S-type zircon:0.875
+The proportion of S-type zircons in JH zircons: 0.4317617866004963
+The proportion of S-type zircons in Hadean JH zircons: 0.32978723404255317
+----------------SVM-----------------
+Best param: {'kernel': 'linear', 'gamma': 8, 'C': 0.8}
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.93      0.90      0.92        31
+
+    accuracy                           0.93        75
+   macro avg       0.93      0.93      0.93        75
+weighted avg       0.93      0.93      0.93        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.87      0.81      0.84        16
+
+    accuracy                           0.92        60
+   macro avg       0.90      0.88      0.89        60
+weighted avg       0.92      0.92      0.92        60
+
+Accuracy of Low-P S-type zircon:0.8125
+The proportion of S-type zircons in JH zircons: 0.5508684863523573
+The proportion of S-type zircons in Hadean JH zircons: 0.46808510638297873
+----------------KNN-----------------
+Best param: {'weights': 'distance', 'n_neighbors': 3, 'algorithm': 'kd_tree'}
+              precision    recall  f1-score   support
+
+         0.0       0.96      1.00      0.98        44
+         1.0       1.00      0.94      0.97        31
+
+    accuracy                           0.97        75
+   macro avg       0.98      0.97      0.97        75
+weighted avg       0.97      0.97      0.97        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.96      1.00      0.98        44
+         1.0       1.00      0.88      0.93        16
+
+    accuracy                           0.97        60
+   macro avg       0.98      0.94      0.96        60
+weighted avg       0.97      0.97      0.97        60
+
+Accuracy of Low-P S-type zircon:0.875
+The proportion of S-type zircons in JH zircons: 0.3970223325062035
+The proportion of S-type zircons in Hadean JH zircons: 0.23404255319148937
+----------------mlp-----------------
+Best param: {'solver': 'adam', 'max_iter': 100, 'learning_rate_init': 0.001, 'hidden_layer_sizes': (100, 40)}
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.98      0.96        44
+         1.0       0.97      0.90      0.93        31
+
+    accuracy                           0.95        75
+   macro avg       0.95      0.94      0.94        75
+weighted avg       0.95      0.95      0.95        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.98      0.96        44
+         1.0       0.93      0.81      0.87        16
+
+    accuracy                           0.93        60
+   macro avg       0.93      0.89      0.91        60
+weighted avg       0.93      0.93      0.93        60
+
+Accuracy of Low-P S-type zircon:0.8125
+The proportion of S-type zircons in JH zircons: 0.45409429280397023
+The proportion of S-type zircons in Hadean JH zircons: 0.35106382978723405
+----------------voting-----------------
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.93      0.90      0.92        31
+
+    accuracy                           0.93        75
+   macro avg       0.93      0.93      0.93        75
+weighted avg       0.93      0.93      0.93        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.87      0.81      0.84        16
+
+    accuracy                           0.92        60
+   macro avg       0.90      0.88      0.89        60
+weighted avg       0.92      0.92      0.92        60
+
+Accuracy of Low-P S-type zircon:0.8125
+The proportion of S-type zircons in JH zircons: 0.28287841191067
+The proportion of S-type zircons in Hadean JH zircons: 0.23404255319148937
+----------------bagging-----------------
+Best param: {'max_features': 1.0, 'max_samples': 1.0, 'n_estimators': 10}
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.93      0.90      0.92        31
+
+    accuracy                           0.93        75
+   macro avg       0.93      0.93      0.93        75
+weighted avg       0.93      0.93      0.93        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.95      0.94        44
+         1.0       0.87      0.81      0.84        16
+
+    accuracy                           0.92        60
+   macro avg       0.90      0.88      0.89        60
+weighted avg       0.92      0.92      0.92        60
+
+Accuracy of Low-P S-type zircon:0.8125
+The proportion of S-type zircons in JH zircons: 0.23076923076923078
+The proportion of S-type zircons in Hadean JH zircons: 0.19148936170212766
+----------------adaboost-----------------
+Best param: {'learning_rate': 0.1, 'n_estimators': 100}
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.98      0.93        44
+         1.0       0.96      0.84      0.90        31
+
+    accuracy                           0.92        75
+   macro avg       0.93      0.91      0.92        75
+weighted avg       0.92      0.92      0.92        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.98      0.93        44
+         1.0       0.92      0.69      0.79        16
+
+    accuracy                           0.90        60
+   macro avg       0.91      0.83      0.86        60
+weighted avg       0.90      0.90      0.90        60
+
+Accuracy of Low-P S-type zircon:0.6875
+The proportion of S-type zircons in JH zircons: 0.27543424317617865
+The proportion of S-type zircons in Hadean JH zircons: 0.14893617021276595
+----------------tsvm-----------------
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.98      0.97        44
+         1.0       0.97      0.94      0.95        31
+
+    accuracy                           0.96        75
+   macro avg       0.96      0.96      0.96        75
+weighted avg       0.96      0.96      0.96        75
+
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.98      0.97        44
+         1.0       0.93      0.88      0.90        16
+
+    accuracy                           0.95        60
+   macro avg       0.94      0.93      0.93        60
+weighted avg       0.95      0.95      0.95        60
+
+Accuracy of Low-P S-type zircon:0.875
+The proportion of S-type zircons in JH zircons: 0.4987593052109181
+The proportion of S-type zircons in Hadean JH zircons: 0.35106382978723405
+tsvm coefficients:
+[ 5.65720728  0.54070188 -1.65699346 -0.49371811 -1.47205881 -0.69704915
+ -3.90479628  0.41552552  0.57853311]
+tsvm intercept:
+-1.6004734055699321
+tsvm hyperplane function:
+5.657207276280821 * P (¦Ìmol/g) + 0.5407018774616923 * Y (¦Ìmol/g) + -1.6569934614314188 * Ce (¦Ìmol/g) + -0.4937181123593537 * Sm (¦Ìmol/g) + -1.4720588078518377 * Eu (¦Ìmol/g) + -0.6970491453066217 * Dy (¦Ìmol/g) + -3.904796283930794 * Lu (¦Ìmol/g) + 0.41552551514396074 * Time-corrected Th (¦Ìmol/g) + 0.5785331141938788 * Time-corrected U (¦Ìmol/g) + -1.6004734055699321 = 0
