@@ -27,5 +27,5 @@ Finally, run the plot_figures.py to obtain figures in the article
 python plot_figures.py
 ```
 ## In Pycharm
-Install all dependent libraries and directly run main.py, Plot figures.py, and plot_JH_zircons_ratio_with_age.py 
+Install all dependent libraries and directly run main.py, and plot_figures.py 
   
