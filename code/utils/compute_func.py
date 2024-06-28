@@ -42,6 +42,7 @@ def predict_and_save_time_series(x_train, pred_data, method, output_filename):
     # Step 8: Save time series stats to CSV
     s_ratio_sequence.to_csv(f"{output_path}/{output_filename}")
 
+    return s_ratio_sequence
 
 def compute_time_seq(data, x_col='Age(Ma)', y_col='Label', series_type="S ratio"):
     """

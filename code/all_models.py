@@ -156,7 +156,8 @@ def SVM(X_train, y_train):
 
 
 def KNN(X_train, y_train):
-    params = {'n_neighbors': [1, 2, 3, 4, 5, 8, 10, 15, 20, 50, 100],
+    params = {'n_neighbors': [1, 2, 8, 10, 15, 20, 50, 100],
+              # 'n_neighbors': [1, 2, 3, 4, 5, 8, 10, 15, 20, 50, 100],
               'weights': ['uniform', 'distance'],
               'algorithm': ['auto', 'ball_tree', 'kd_tree', 'brute']
               }
@@ -176,7 +177,7 @@ def KNN(X_train, y_train):
 def logistic(X_train, y_train):
     clf = LogisticRegression()
     param = {'penalty': ['l1', 'l2'],
-             'C': [0.01, 0.05, 0.1, 1, 2, 4, 8, 10, 100],
+             'C': [0.01, 0.05, 0.1, 1, 2, 5, 10, 100, 1000],
              'solver': ['lbfgs', 'sag', 'saga'],
              'multi_class': ['multinomial']
              }

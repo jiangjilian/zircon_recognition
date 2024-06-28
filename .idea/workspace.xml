@@ -4,7 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59d552fb-de1d-49d7-9c26-3e547e1dfe48" name="Changes" comment="" />
+    <list default="true" id="59d552fb-de1d-49d7-9c26-3e547e1dfe48" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/all_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/all_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/globalVar.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/globalVar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/plot_figures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/plot_figures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/utils/compute_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/utils/compute_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database 2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/database 2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$Supplementary Table 1 （full).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$database 2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$五张图 Final.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/Bootstrap_means_JH_zircon_tsvm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/Bootstrap_means_JH_zircon_tsvm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/Bootstrap_means_global_detrital_zircon_data_tsvm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/Bootstrap_means_global_detrital_zircon_data_tsvm.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/database 2_evaluation_LeaveOneOut_202402241942.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/database 2_with_prediction.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/database 2_with_prediction.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/Bernoulli.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/Bernoulli.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/KNN.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/KNN.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/adaboost.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/adaboost.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/bagging.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/bagging.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/decisiontree.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/decisiontree.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/logistic.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/logistic.model" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/models/mlp.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/mlp.model" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +76,7 @@
     &quot;Python.全球锆石比例演化图解.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/博士/01锆石——S型锆石比例演化/03投稿/02 代码提交/zircon_recognition_20240223_final&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/博士/01锆石——S型锆石比例演化/03投稿/06 代码最终提交/zircon_recognition&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
@@ -52,14 +90,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\博士\01锆石——S型锆石比例演化\03投稿\02 代码提交\zircon_recognition_20240504\code" />
       <recent name="F:\PycharmProject\zircon_recognition_20221028_Lu_YB_随机选择test\code" />
       <recent name="F:\PycharmProject\zircon_recognition_20221028_Lu_YB_随机选择test\data" />
       <recent name="I:\PycharmProject\办公室电脑的PycharmProject\zircon_recognition_20221028_Lu_YB_随机选择test\code" />
       <recent name="F:\PycharmProject\zircon_recognition_20221028_Lu\code" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="全球锆石比例演化图解" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.plot_figures">
+    <configuration name="随机森林影响程度" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,53 +106,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../01实验/01实验完善/zircon_recognition_20230904_Lu_YB_随机选择test_with_A_type/code" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/全球锆石比例演化图解.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="全球锆石比例演化图解" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="zircon_recognition_20221028_随机划分testset" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/全球锆石比例演化图解.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="全球锆石比例演化图解" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="zircon_recognition_20221028_随机划分testset" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/全球锆石比例演化图解.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../01实验/01实验完善/zircon_recognition_20230904_Lu_YB_随机选择test_with_A_type/code/随机森林影响程度.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,6 +158,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="检查同分布_KDE批量图" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="H:/科研/PycharmProject/zircon_recognition_20221028_Lu_YB_随机选择test/code" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="H:/科研/PycharmProject/zircon_recognition_20221028_Lu_YB_随机选择test/code/检查同分布_KDE批量图.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,27 +192,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="normlization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/normlization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,7 +221,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="plot_figures_with_GSSB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,7 +233,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/plot_figures_with_GSSB.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,19 +243,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.随机森林影响程度" />
+      <item itemvalue="Python.检查同分布_KDE批量图" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.normlization" />
       <item itemvalue="Python.plot_figures" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.全球锆石比例演化图解" />
+      <item itemvalue="Python.plot_figures_with_GSSB" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.plot_figures" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.全球锆石比例演化图解" />
-        <item itemvalue="Python.normlization" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.随机森林影响程度" />
+        <item itemvalue="Python.检查同分布_KDE批量图" />
+        <item itemvalue="Python.plot_figures_with_GSSB" />
       </list>
     </recent_temporary>
   </component>
@@ -325,29 +322,29 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/main.py</url>
-          <line>178</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/全球锆石比例演化图解.py</url>
           <line>105</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/plot_figures.py</url>
-          <line>460</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/plot_figures.py</url>
-          <line>826</line>
+          <line>848</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/plot_figures.py</url>
-          <line>442</line>
-          <option name="timeStamp" value="92" />
+          <line>298</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/all_models.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/main.py</url>
+          <line>197</line>
+          <option name="timeStamp" value="96" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -11,7 +11,18 @@ from matplotlib.ticker import MultipleLocator
 from sklearn.model_selection import learning_curve
 warnings.filterwarnings("ignore")
 
+from matplotlib import rcParams
 
+config = {
+    "font.family": 'Arial',
+    "axes.unicode_minus": False,
+    "axes.labelsize": 8,
+    "axes.titlesize": 8,
+    "legend.fontsize": 8,
+    "xtick.labelsize": 8,
+    "ytick.labelsize": 8
+}
+rcParams.update(config)
 def plot_fig1A(input_file, output_file):
     """
     This function plots (REE+Y)3 versus Y relationship for different zircon types.
@@ -131,13 +142,15 @@ def plot_fig1B(input_file, output_file):
 
     # Load data from Excel file
     df_age_plot = pd.read_excel(input_file)
+    df_age_plot.loc[(df_age_plot['Zircon'] == "TTG zircon") | (df_age_plot['Zircon'] == "I-type zircon"), "Zircon"] = "non-S-type zircon"
+
 
     # Define zircon types, colors, shapes, face colors, alpha values, and z-order
     zircon_types = [
         'Detrital zircon',
         "JH zircon",
         'S-type zircon',
-        'I-type zircon',
+        'non-S-type zircon',
         # 'Archean detrital zircon'
     ]
 
@@ -240,19 +253,20 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
     A figure comparing the performances of the two methods across different P bins.
     """
     # Map predicted labels to model names for all sets
-    input_data.loc[(input_data["Set"] == "Prediction set") & (input_data[method + ' Label'] == 0), method + " model"] = "I-type detrital zircon"
+    input_data.loc[(input_data["Set"] == "Prediction set") & (input_data[method + ' Label'] == 0), method + " model"] = "non-S-type detrital zircon"
     input_data.loc[(input_data["Set"] == "Prediction set") & ([method + ' Label'] == 1), method + " model"] = "S-type detrital zircon"
-    input_data.loc[(input_data["Set"] == "Training set") & (input_data[method + ' Label'] == 0), method + " model"] = "I-type zircon"
+    input_data.loc[(input_data["Set"] == "Training set") & (input_data[method + ' Label'] == 0), method + " model"] = "non-S-type zircon"
     input_data.loc[(input_data["Set"] == "Training set") & (input_data[method + ' Label'] == 1), method + " model"] = "S-type zircon"
-    input_data.loc[(input_data["Set"] == "Testing set") & (input_data[method + ' Label'] == 0), method + " model"] = "I-type zircon"
+    input_data.loc[(input_data["Set"] == "Testing set") & (input_data[method + ' Label'] == 0), method + " model"] = "non-S-type zircon"
     input_data.loc[(input_data["Set"] == "Testing set") & (input_data[method + ' Label'] == 1), method + " model"] = "S-type zircon"
 
     # Evaluate model performance
-    input_data[f'Performance of {method} model'] = np.where(input_data['Zircon'] == input_data[method + ' model'],
-                                                             'correct', 'wrong')
+    #input_data[f'Performance of {method} model'] = np.where(input_data['Zircon'] == input_data[method + ' model'],
+    #                                                         'correct', 'wrong')
 
     # Filter out non-training/testing set data
     data = input_data[input_data["Set"].isin(['Training set', "Testing set"])]
+    data.loc[(data['Zircon'] == "TTG zircon") | (data['Zircon'] == "I-type zircon"), "Zircon"] = "non-S-type zircon"
 
     # Initialize statistics DataFrame
     stat = pd.DataFrame()
@@ -261,7 +275,7 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
     bins = np.linspace(0, 70, 15)
     data["P bins"] = pd.cut(data["P (μmol/g)"], bins)
     zircon_num_bins = data.groupby(["Zircon", "P bins"])["P bins"].count()
-    stat["I-type zircon"] = zircon_num_bins["I-type zircon"]
+    stat["non-S-type zircon"] = zircon_num_bins["non-S-type zircon"]
     stat["S-type zircon"] = zircon_num_bins["S-type zircon"]
 
     # 2. Calculate P-criterion accuracy
@@ -270,19 +284,19 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
     P_acc_bins_S = count_bins1 / count_bins1.groupby(level=[1]).transform(sum)
     stat["S type P criterion"] = P_acc_bins_S['correct']
 
-    I_type_data = data[data["Zircon"] == "I-type zircon"]
-    count_bins1 = I_type_data.groupby(["Performance of P criteria", "P bins"])["P bins"].count()
+    non_S_type_data = data[data["Zircon"] == "non-S-type zircon"]
+    count_bins1 = non_S_type_data.groupby(["Performance of P criteria", "P bins"])["P bins"].count()
     P_acc_bins_I = count_bins1 / count_bins1.groupby(level=[1]).transform(sum)
-    stat["I type P criterion"] = P_acc_bins_I['correct']
+    stat["non-S type P criterion"] = P_acc_bins_I['correct']
 
     # 3. Calculate model accuracy
     count_bins2_S = S_type_data.groupby([f"Performance of {method} model", "P bins"])["P bins"].count()
     SVM_acc_bins_S = count_bins2_S / count_bins2_S.groupby(level=[1]).transform(sum)
     stat[f"S type {method} model"] = SVM_acc_bins_S['correct']
 
-    count_bins2_I = I_type_data.groupby([f"Performance of {method} model", "P bins"])["P bins"].count()
+    count_bins2_I = non_S_type_data.groupby([f"Performance of {method} model", "P bins"])["P bins"].count()
     SVM_acc_bins_I = count_bins2_I / count_bins2_I.groupby(level=[1]).transform(sum)
-    stat[f"I type {method} model"] = SVM_acc_bins_I['correct']
+    stat[f"non-S type {method} model"] = SVM_acc_bins_I['correct']
 
     # Plotting
     fig1, ax1 = plt.subplots(figsize=(4, 3))
@@ -299,7 +313,7 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
     ax1.axhline(0, color="grey")
 
     scale_ratio = 3
-    y_values_scaled = stat["I-type zircon"] / scale_ratio
+    y_values_scaled = stat["non-S-type zircon"] / scale_ratio
     ax1.bar(x_positions, -y_values_scaled, width=4, color='red')
 
     plt.yticks([-80 / scale_ratio, -40 / scale_ratio, 0, 10, 20, 30], ["80", "40", 0, 10, 20, 30])
@@ -310,7 +324,7 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
     ax1.spines['bottom'].set_position(('data', -80 / scale_ratio - 2))
     ax1.annotate('S-type zircon',
                  xy=(260, 200), xycoords='figure pixels', color="steelblue")
-    ax1.annotate('I-type zircon',
+    ax1.annotate('non-S-type zircon',
                  xy=(180, 100), xycoords='figure pixels', color="red")
 
     # Accuracy line plot for both types
@@ -331,12 +345,12 @@ def plot_fig3A(input_data, method="tsvm", output_file=None):
                 label="P criterion")
 
     x_positions -= 1.7
-    ax2.scatter(x_positions, -stat[f"I type {method} model"], marker="_", color="green")
+    ax2.scatter(x_positions, -stat[f"non-S type {method} model"], marker="_", color="green")
     x_positions += 3.4
-    ax2.scatter(x_positions, -stat[f"I type {method} model"], marker="_", color="green")
+    ax2.scatter(x_positions, -stat[f"non-S type {method} model"], marker="_", color="green")
     x_positions -= 1.7
-    ax2.scatter(x_positions, -stat[f"I type {method} model"], marker="o", edgecolor="green", facecolor='none')
-    ax2.scatter(x_positions, -stat["I type P criterion"], marker="x", s=18, color="black", linewidth=0.8)
+    ax2.scatter(x_positions, -stat[f"non-S type {method} model"], marker="o", edgecolor="green", facecolor='none')
+    ax2.scatter(x_positions, -stat["non-S type P criterion"], marker="x", s=18, color="black", linewidth=0.8)
 
     ax2.set_ylim([-1.1, 1.1])
     ax2.set_xlim([0, 70])
@@ -371,13 +385,15 @@ def plot_fig3B(input_data, output_file):
 
     # Combine certain zircon categories
     input_data.loc[input_data["Zircon"].isin(["Archean detrital zircon", "JH zircon", "GSB zircon"]), "Zircon"] = "Detrital zircon"
+    input_data.loc[(input_data['Zircon'] == "TTG zircon") | (input_data['Zircon'] == "I-type zircon"), "Zircon"] = "non-S-type zircon"
+
 
     # Define zircon types and corresponding styles
     zircon_types = [
         'Detrital zircon',
         'S-type zircon',
-        'I-type zircon',
-        'I-type detrital zircon',
+        'non-S-type zircon',
+        'non-S-type detrital zircon',
         'S-type detrital zircon',
     ]
     edge_colors = [
@@ -523,8 +539,8 @@ def plot_fig4D(input_data, output_file):
 
     # Define types of zircon
     ml_ziron_types = [
-        'I-type detrital zircon',
-        'I-type Jack Hills zircon',
+        'non-S-type detrital zircon',
+        'non-S-type Jack Hills zircon',
         'S-type detrital zircon',
         'S-type Jack Hills zircon'
     ]
@@ -752,6 +768,7 @@ def plot_JH_S_ratio(ax, S_ratio_seq, color="steelblue"):
 
 def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
                         n_jobs=1, train_sizes=np.linspace(.05, 1.0, 20), verbose=0):
+
     f, ax = plt.subplots(figsize=(4, 3))
     if ylim is not None:
         plt.ylim(*ylim)
@@ -770,8 +787,10 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
              label="Cross-validation accuracy", alpha=0.6,  markersize='3')
 
 
-    plt.xlabel("The number of samples in training set", fontsize=10)
-    plt.ylabel("Accuracy", fontsize=10)
+    plt.xlabel("The number of samples in training set", fontsize=8)
+    plt.ylabel("Accuracy", fontsize=8)
+    plt.xticks( fontsize=8)
+    plt.yticks(fontsize=8)
     # ax.xaxis.set_major_locator(loc)
     ax.xaxis.set_major_locator(plticker.MultipleLocator(base=20))
     ax.yaxis.set_major_locator(plticker.MultipleLocator(base=0.2))
@@ -787,8 +806,8 @@ def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
         os.makedirs(savePath)
     plt.draw()
     #plt.gca().invert_yaxis()
-    plt.savefig(savePath + title + ".jpg")
-    plt.savefig(savePath + title + ".svg")
+    plt.savefig(savePath + title + ".png", dpi=300)
+    plt.savefig(savePath + title + ".pdf")
     plt.show()
     return plt
 
@@ -812,13 +831,16 @@ if __name__ == "__main__":
     plot_fig1B(input_file=data_path + "database 2 with_whole_earth_zircon.xlsx",
                output_file=fig_path + "Fig1B_Age_P20230924")
 
+
     # Fig. 3A: Compare TSVM performance with traditional method
     tsvm_method = "tsvm"
+
     plot_fig3A(input_data=zircons_data.copy(),
                method=tsvm_method,
                output_file=fig_path + f"Fig3A_Accuracy_of_{tsvm_method}_vs_traditional_method")
 
     # Fig. 3B: Plot TSVM score for detrital zircons
+    
     plot_fig3B(input_data=zircons_data.copy(),
                output_file=fig_path + "Fig3B_TSVM_Score_with_type0706")
 
@@ -827,15 +849,22 @@ if __name__ == "__main__":
     plot_fig4C(S_ratio_seq=Jh_S_ratio_seq,
                output_file=fig_path + "Fig4C_Ratio_of_S-type_Zircons")
 
+
+    # Fig. 4C: Plot S-type zircon ratio for GSSB zircon sample
+    GSSB_S_ratio_seq = pd.read_csv(output_path + "Bootstrap_means_GSSB_zircon_" + tsvm_method + ".csv")
+    plot_fig4C(S_ratio_seq=GSSB_S_ratio_seq,
+               output_file=fig_path + "Fig4C_Ratio_of_GSSB_S-type_Zircons")
+
     # Fig. 4D: Bar graph for detrital Zircon data
     detrital_data = zircons_data[(zircons_data["Set"] == "Prediction set")].copy()
     detrital_data.loc[(zircons_data["Zircon"] == "JH zircon") & (zircons_data["tsvm model"] == "S-type detrital zircon"), "tsvm model"] = "S-type Jack Hills zircon"
-    detrital_data.loc[(zircons_data["Zircon"] == "JH zircon") & (zircons_data["tsvm model"] == "I-type detrital zircon"), "tsvm model"] = "I-type Jack Hills zircon"
+    detrital_data.loc[(zircons_data["Zircon"] == "JH zircon") & (zircons_data["tsvm model"] == "non-S-type detrital zircon"), "tsvm model"] = "non-S-type Jack Hills zircon"
     detrital_data.reset_index(inplace=True, drop=True)
     plot_fig4D(input_data=detrital_data,
                output_file=fig_path + "Fig4D_sed_stacked_hist")
 
     # Fig. 5: Global S-type zircon ratio using TSVM method
+    tsvm_method = "tsvm"
     global_S_ratio_seq = pd.read_csv(output_path + "Bootstrap_means_global_detrital_zircon_data_" + tsvm_method + ".csv")
     plot_fig5(global_S_ratio_seq,
               Jh_S_ratio_seq,
