@@ -15,25 +15,23 @@
       <change beforePath="$PROJECT_DIR$/data/~$Supplementary Table 1 （full).xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/~$database 2.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/~$五张图 Final.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig1A_REE_P_with_detrital_zircon.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig1B_Age_P20230924.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.png" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig3A_Accuracy_of_tsvm_vs_traditional_method.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig3B_TSVM_Score_with_type0706.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig4C_Ratio_of_S-type_Zircons.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig4D_sed_stacked_hist.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Fig5D_tsvm_Global_S-Type_Zircon_Ratio.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fig/Learning_curve/Learning Curves for tsvm.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/Bootstrap_means_JH_zircon_tsvm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/Bootstrap_means_JH_zircon_tsvm.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/Bootstrap_means_global_detrital_zircon_data_tsvm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/result/Bootstrap_means_global_detrital_zircon_data_tsvm.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/database 2_evaluation_LeaveOneOut_202402241942.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/database 2_with_prediction.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/database 2_with_prediction.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/models/Bernoulli.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/Bernoulli.model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/models/KNN.model" beforeDir="false" afterPath="$PROJECT_DIR$/result/models/KNN.model" afterDir="false" />
@@ -183,9 +181,6 @@
       <module name="zircon_recognition_20221028_Lu_YB_随机选择test_20240205重新修改运行" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
